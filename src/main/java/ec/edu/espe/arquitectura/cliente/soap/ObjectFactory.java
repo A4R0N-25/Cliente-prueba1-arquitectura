@@ -39,16 +39,16 @@ public class ObjectFactory {
      * Create an instance of {@link PartidosDisponiblesResponse }
      * 
      */
-    public ec.edu.espe.arquitectura.servidor.prueba.PartidosDisponiblesResponse createPartidosDisponiblesResponse() {
-        return new ec.edu.espe.arquitectura.servidor.prueba.PartidosDisponiblesResponse();
+    public ec.edu.espe.arquitectura.cliente.soap.PartidosDisponiblesResponse createPartidosDisponiblesResponse() {
+        return new ec.edu.espe.arquitectura.cliente.soap.PartidosDisponiblesResponse();
     }
 
     /**
      * Create an instance of {@link PartidoRS }
      * 
      */
-    public ec.edu.espe.arquitectura.servidor.prueba.PartidoRS createPartidoRS() {
-        return new ec.edu.espe.arquitectura.servidor.prueba.PartidoRS();
+    public ec.edu.espe.arquitectura.cliente.soap.PartidoRS createPartidoRS() {
+        return new ec.edu.espe.arquitectura.cliente.soap.PartidoRS();
     }
 
     /**
@@ -71,8 +71,8 @@ public class ObjectFactory {
      * Create an instance of {@link PartidosDisponiblesRequest }
      * 
      */
-    public ec.edu.espe.arquitectura.servidor.prueba.PartidosDisponiblesRequest createPartidosDisponiblesRequest() {
-        return new ec.edu.espe.arquitectura.servidor.prueba.PartidosDisponiblesRequest();
+    public ec.edu.espe.arquitectura.cliente.soap.PartidosDisponiblesRequest createPartidosDisponiblesRequest() {
+        return new ec.edu.espe.arquitectura.cliente.soap.PartidosDisponiblesRequest();
     }
 
     /**
@@ -111,8 +111,8 @@ public class ObjectFactory {
      * Create an instance of {@link Partido }
      * 
      */
-    public ec.edu.espe.arquitectura.servidor.prueba.Partido createPartido() {
-        return new ec.edu.espe.arquitectura.servidor.prueba.Partido();
+    public ec.edu.espe.arquitectura.cliente.soap.Partido createPartido() {
+        return new ec.edu.espe.arquitectura.cliente.soap.Partido();
     }
 
 }

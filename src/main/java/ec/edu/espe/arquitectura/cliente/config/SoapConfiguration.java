@@ -1,5 +1,6 @@
 package ec.edu.espe.arquitectura.cliente.config;
 
+import ec.edu.espe.arquitectura.cliente.service.PartidoFutbolService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,22 +10,22 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 @Configuration
 public class SoapConfiguration {
 
-    /*@Autowired
-    private ClientService client;*/
+    @Autowired
+    private PartidoFutbolService partidoFutbolService;
 
     @Bean
     public Jaxb2Marshaller marshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-        marshaller.setContextPath("ec.edu.espe.fpwithsoap.bridge.soap");
+        marshaller.setContextPath("ec.edu.espe.arquitectura.cliente.soap");
         return marshaller;
     }
 
-    /*@Bean
+    @Bean
     @Primary
-    public ClientService soapClient(Jaxb2Marshaller marshaller) {
-        client.setMarshaller(marshaller);
-        client.setUnmarshaller(marshaller);
-        return client;
-    }*/
+    public PartidoFutbolService soapClient(Jaxb2Marshaller marshaller) {
+        partidoFutbolService.setMarshaller(marshaller);
+        partidoFutbolService.setUnmarshaller(marshaller);
+        return partidoFutbolService;
+    }
 
 }
